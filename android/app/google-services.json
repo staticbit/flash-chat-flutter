@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1010552644942",
+    "firebase_url": "https://fire-chat-9d877.firebaseio.com",
+    "project_id": "fire-chat-9d877",
+    "storage_bucket": "fire-chat-9d877.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010552644942:android:a536560976bc2b84",
+        "android_client_info": {
+          "package_name": "com.codefrappe.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010552644942-0fiffnfq7h9mmuptbjeu89v2udaqmhn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcGrbWZ3jxAkiQzruHANwSTmeGb_o8V08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010552644942-0fiffnfq7h9mmuptbjeu89v2udaqmhn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
