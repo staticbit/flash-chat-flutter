@@ -29,23 +29,6 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  // Pulling messages
-  void getMessages() async {
-    final messages = await _firestore.collection('messages').getDocuments();
-    for (var message in messages.documents) {
-      print(message.data);
-    }
-  }
-
-  // Subscribing to message stream
-  void messagesStream() async {
-    await for (var snapshot in _firestore.collection('messages').snapshots()) {
-      for (var message in snapshot.documents) {
-        print(message.data);
-      }
-    }
-  }
-
   @override
   void initState() {
     super.initState();
@@ -124,7 +107,7 @@ class MessagesStream extends StatelessWidget {
             ),
           );
         }
-        final messages = snapshot.data.documents;
+        final messages = snapshot.data.documents.reversed;
         List<MessageBubble> messageBubbles = [];
         for (var message in messages) {
           final messageText = message.data['text'];
@@ -139,6 +122,7 @@ class MessagesStream extends StatelessWidget {
 
         return Expanded(
           child: ListView(
+            reverse: true,
             padding: EdgeInsets.symmetric(
               vertical: 20.0,
               horizontal: 10.0,
